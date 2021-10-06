@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Collect Pre-Sales revenue from early adopters using Stripe API" />
+    <meta
+      name="author"
+      content="SaaSBase"
+    />
+    <title>Collect Pre-Sales revenue from early adopters using Stripe API</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">
+            <a class="nav-link active" href="#">Biller</a>
+          </h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">About</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover mt-5">
+        <h1 class="cover-heading mb-2">Easiest way to get paid on time</h1>
+        <p class="lead mb-5">
+          Biller lets freelancers accept payments and send invoices to their clients
+          with a single click.
+        </p>
+
+        <div id="payment">
+          <div data-vl-widget="popupTrigger"></div>
+
+          <!-- <button
+            class="btn btn-outline-secondary"
+            style="width: 50%;"
+            type="submit"
+            id="order-btn"
+            data-checkout-mode="payment"
+            data-price-id="price_1HhdUaAkSQQctVkLrxU3AeDS"
+          >
+            Pre-Order for $1 <span style="text-decoration:line-through">$20</span>
+          </button> -->
+
+          <!-- <div class="mb-1">
+            <img
+              src="images/hero-image.png"
+              class="img-fluid hero-img"
+              alt="Biller Illustration"
+            />
+          </div> -->
+          
+          <!-- <div class="row">
+            <div class="offset-md-2 col-md-8 offset-md-2">
+              <p class="text-muted text-center">
+                45 people have pre-ordered in the last week
+              </p>
+            </div>
+          </div> -->
+        </div>
+        <p id="status" style="color: #5000ff;"></p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner" style="color: #6c757d !important;">
+          <p>Copyright © 2020 Biller | Built by <a href="https://saasbase.dev">SaaSBase</a></p>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/main.js"></script>
+    <script>!function(a,b,c,d,t){var e,f=a.getElementsByTagName("head")[0];if(!a.getElementById(c)){if(e=a.createElement(b),e.id=c,e.setAttribute("data-vrlps-ucid",d),e.setAttribute("data-vrlps-version","2"), e.setAttribute("data-vrlps-template", t),e.src="https://app.viral-loops.com/popup_assets/js/vl_load_v2.min.js",window.ub){jQuery=null,$=null;var g=a.createElement(b);g.src="https://code.jquery.com/jquery-2.2.4.min.js",f.appendChild(g)}f.appendChild(e);var h=a.createElement("link");h.rel="stylesheet",h.type="text/css",h.href="https://app.viral-loops.com/static/vl-loader.css",f.appendChild(h);var i=a.createElement("div");i.id="vl-overlay",i.style.display="none";var j=a.createElement("div");j.id="vl-loader",i.appendChild(j),a.addEventListener("DOMContentLoaded",function(b){a.body.appendChild(i);for(var c=a.getElementsByClassName("vrlps-trigger"),d=0;d<c.length;d++)c[d].removeAttribute("href"),c[d].onclick=function(){a.getElementById("vl-overlay").style.display="block"};var e=a.querySelectorAll("[data-vl-widget='popupTrigger']");[].forEach.call(e,function(b){var c=a.createElement("div");c.className="vl-embedded-cta-loader",b.appendChild(c)})})}}(document,"script","vrlps-js","77u0MEMwUShbsogiM9GeRWgMk1U","waitlist");</script>
+  </body>
+</html>
